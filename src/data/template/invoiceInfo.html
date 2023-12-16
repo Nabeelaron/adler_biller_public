@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        html {
+            -webkit-print-color-adjust: exact;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --primary-color: rgb(240, 236, 212);
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            text-align: center;
+        }
+        
+        header>img {
+            width: 30%
+        }
+        
+        footer {
+            text-align: center;
+            font-weight: bolder;
+            width: 100%;
+            padding: 0.5rem;
+            color: WHITE;
+            background-color: orange;
+        }
+        
+        #title {
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: xx-large;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #message {
+            width: 80%;
+            margin: auto;
+            background: white;
+            border: 2px solid orange;
+            border-radius: 30px;
+            padding: 1em;
+            margin-bottom: 1em;
+            color: rgb(52, 48, 48);
+            text-overflow: clip;
+            overflow: none;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="cid:logo" alt="">
+    </header>
+    <section>
+        <div id='title'>
+            <h1>THANK YOU</h1>
+            <h4>for choosing</h4><strong><h2>Company name</h2></strong>
+        </div>
+
+        <div id='message'>
+            <pre>
+Hi User,
+                <br>
+    Drive home your new {{type}}.
+    We are sure it will put a smile on your face &#128522; .
+    Invoice is attached herewith this email.
+    <br>
+Thanks & Regards,
+Team company,
+Contact : company@domain.com,
+</pre>
+
+        </div>
+
+    </section>
+    <footer>
+        Please visit again.
+    </footer>
+</body>
+
+</html>

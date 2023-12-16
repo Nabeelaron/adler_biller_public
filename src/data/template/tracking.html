@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking</title>
+    <style>
+        html {
+            -webkit-print-color-adjust: exact;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --primary-color: rgb(240, 236, 212);
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            width: 100%;
+            background-color: var(--primary-color);
+            text-align: center;
+        }
+        
+        #message {
+            padding: 1rem;
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+            border: 1px solid orangered;
+            margin-bottom: 1rem
+        }
+        
+        section {
+            padding: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            font-weight: bolder;
+            width: 100%;
+            padding: 0.5rem;
+            color: WHITE;
+            background-color: orange;
+        }
+        
+        @media (max-width: 700px) {
+            #message {
+                max-width: 100%;
+            }
+            .button {
+                max-width: 90%;
+            }
+        }
+        
+        table {
+            max-width: 100%;
+            margin: auto;
+            text-align: left;
+            border: 1px solid orangered;
+        }
+        
+        table td {
+            padding-bottom: 1em
+        }
+        
+        .id {
+            background-color: orange;
+            color: WHITE;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .button {
+            display: block;
+            color: WHITE;
+            background-color: red;
+            border-radius: 10px;
+            max-width: 5rem;
+            padding: 1rem;
+            margin: auto;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="http://www.company.com"> <img src="http://company.com/img/company128px.a1b49261.png"></a>
+
+    </header>
+    <section>
+
+        <div id="message">
+
+            <p>
+                You can track the status of your vehicle in company using its tracking system
+            </p>
+            <table>
+                <tr>
+                    <th>Tacking ID </th>
+                    <td class="id">{{billNo}}</td>
+                </tr>
+                <tr>
+                    <th>Vehicle </th>
+                    <td>{{vehicle}}</td>
+                </tr>
+
+            </table>
+        </div>
+        <a class="button" href='https://www.company.com/tracking'>Track</a>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

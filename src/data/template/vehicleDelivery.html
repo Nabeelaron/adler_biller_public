@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <style>
+        html {
+            -webkit-print-color-adjust: exact;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --primary-color: rgb(240, 236, 212);
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            width: 100%;
+            background-color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .card {
+            font-size: 1.25rem;
+            padding: 1rem;
+            color: white;
+            font-weight: bold;
+            max-width: 80%;
+            text-align: center;
+            border-radius: 30px;
+            background: #FC7E02;
+            background: -webkit-radial-gradient(bottom, #FC7E02, #FFA601);
+            background: -moz-radial-gradient(bottom, #FC7E02, #FFA601);
+            background: radial-gradient(to top, #FC7E02, #FFA601);
+            background-image: linear-gradient( 89.4deg, rgba(194, 0, 39, 1) 0.8%, rgba(10, 35, 104, 1) 99.4%);
+            margin: auto;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            text-overflow: ellipsis
+        }
+        
+        section {
+            padding: 1rem
+        }
+        
+        footer {
+            text-align: center;
+            font-weight: bolder;
+            width: 100%;
+            padding: 0.5rem;
+            color: WHITE;
+            background-color: orange;
+        }
+        
+        #license {
+            display: inline-block;
+            border: 3px solid black;
+            padding: 1rem;
+            color: black;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            margin: 1em;
+            text-align: center;
+            text-transform: uppercase;
+            outline: 2px solid whitesmoke
+        }
+        
+        p {
+            display: inline-block;
+        }
+        
+        @media (max-width: 700px) {
+            .card {
+                max-width: 100%;
+            }
+            p {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="http://www.company.com"> <img src="cid:logo"></a>
+
+    </header>
+    <section>
+
+        <div class="card">
+            <p> Your vehicle </p>
+            <span id='license'>
+                {{licensePlateNumber}}
+            </span>
+            <p> is ready </p>
+            <p>&#128077;</p>
+
+        </div>
+
+    </section>
+    <footer>
+        Please take delivery at the earliest.
+    </footer>
+</body>
+
+</html>

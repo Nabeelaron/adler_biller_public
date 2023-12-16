@@ -1,0 +1,4 @@
+#1 find backup method -- google drive storage [economical & efficient]
+#2 create auto backup module -- 
+#3 package mongodb to electron packager
+#4 icon fix 
